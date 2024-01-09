@@ -1,0 +1,37 @@
+body {
+  font-family: "Krona One", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  height: 80vh;
+  background-color: rgb(39, 39, 39);
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient {
+  height: 100px;
+  width: 500px;
+}
+
+input[type="range"] {
+  width: 500px;
+}
+
+.example {
+  width: 100px;
+  height: 100%;
+}
+
+.output {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 50px;
+  color: white;
+}

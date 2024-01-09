@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex">
+    <div>
+      <div id="gradient" class="gradient"></div>
+      <input
+        id="slide"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        value="50"
+        onchange="updateSlider(this.value)"
+      />
+      <input class="color1" type="color" name="color1" value="#ffffff" />
+      <input class="color2" type="color" name="color2" value="#ffffff" />
+      <div class="output">
+        <div id="color" class="example"></div>
+        <p id="colorPerc">1</p>
+      </div>
+      
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
