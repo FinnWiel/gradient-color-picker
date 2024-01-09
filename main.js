@@ -3,6 +3,7 @@ var color2 = document.querySelector(".color2");
 var gradient = document.getElementById("gradient");
 var chosenColor = document.getElementById("color");
 var chosenColorPerc = document.getElementById("colorPerc");
+var chosenColorRGB = document.getElementById("colorRGB");
 
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
@@ -49,6 +50,7 @@ function updateSlider(percentage) {
 
 function updateScreen(){
     chosenColorPerc.innerHTML = chosenPerc + "%";
+    chosenColorRGB.innerHTML = getColor(chosenPerc);
     chosenColor.style.backgroundColor = getColor(chosenPerc);
 }
 
